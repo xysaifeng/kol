@@ -1,0 +1,106 @@
+.report {
+    .home-top {
+        padding: 40px 0 28px;
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 30px;
+            .report {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            .export {
+                color: #01acff;
+                font-size: 14px;
+            }
+            
+        }
+        .row2 {
+            height: 40px;
+            margin-top: 12px;
+            .left-ad {
+                border: 2px solid #01acff;
+                border-radius: 20px;
+                height: 35px;
+                width: 258px;
+                // line-height: 35px;
+                display: flex;
+                align-items: center;
+
+                >span {
+                    color: #01acff;
+                    font-size: 12px;
+                    flex: 1;
+                    text-align: center;
+                    cursor: pointer;
+                    &.active {
+                        color: #fff;
+                        border-radius: 20px;
+                        height: 35px;
+                        line-height: 35px;
+                        background: #01acff;
+                    }
+                }
+            }
+            .ant-form-inline {
+                .ant-form-item:last-child {
+                    margin-right: 0;
+                }
+                .ant-form-item-label {
+                    > label {
+                        font-size: 12px;
+                    }
+                }
+                .ant-form-item-control-wrapper {
+                    width: 102px;
+                    height: 38px;
+                    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+                    .ant-input {
+                        border: none;
+                        font-size: 13px;
+                        &:focus {
+                            box-shadow: 0 0 0 2px rgba(24, 144, 255, 0);
+                            width: 102px;
+                        }
+                    }
+                    .ant-calendar-picker-icon {
+                        display: none;
+                    }
+                    .ant-calendar-picker-clear {
+                        right: 5px;
+                    }
+                }
+            }
+        }
+
+
+    }
+    .list {
+        .ant-table-wrapper {
+            box-shadow: 0 0 3px rgba(0,0,0,.2);
+            margin-bottom: 12px;
+            .ant-table-body {
+                font-size: 12px;
+            }
+            .ant-table-thead {
+               tr > th {
+                    background: #fff;
+                    height: 42px;
+                    padding: 10px 16px !important;
+                    span {
+                        font-weight: bold;
+                    }
+               } 
+                
+            }
+
+        }
+        .ant-pagination.mini {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    
+} 

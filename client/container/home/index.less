@@ -1,0 +1,108 @@
+.home {
+    .home-top {
+        padding: 50px 0 28px;
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 30px;
+            .overview {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            .ant-divider-vertical {
+                background: rgba(0, 0, 0, .5);
+            }
+            .exit {
+                color: #01acff;
+            }
+            
+        }
+        .blue-line {
+            line-height: 5px;
+        }
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        height: 205px;
+        border-right: 5px solid #01acff;
+        .left {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+            // align-items: center;
+            text-indent: 25px;
+            width: 205px;
+            height: 100%;
+            background: #01acff;
+            color: #fff;
+            >span {
+                display: inline-block;
+            }
+            .money {
+                font-size: 40px;
+                line-height: 46px;
+            }
+            .label {
+                font-size: 12px;
+                font-weight: bold;
+                padding-left: 8px;
+                line-height: 20px;
+            }
+            .white-line {
+                position: absolute;
+                bottom: 40px;
+                left: 32px;
+                width: 60px;
+                height: 2px;
+                background: #fff;
+                // margin-left: 32px;
+            }
+            .angle {
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border: 10px solid;
+                border-color: transparent transparent  transparent #01acff;
+            }
+            .star {
+                position: absolute;
+                left: 0;
+                top: 0;
+
+            }
+        }
+        .right {
+            display: flex;
+            flex: 1;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            background: #efefef;
+            >div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .money {
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #6d6d6d;
+                    line-height: 44px;
+                }
+                .label {
+                    color: #a7a7a7;
+                    font-size: 12px;
+                    // line-height: 22px;
+                }
+            }
+        }
+
+    }
+    
+} 

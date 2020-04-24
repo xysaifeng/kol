@@ -1,0 +1,50 @@
+{
+    // "env": {
+    //     "browser": true,
+    //     "commonjs": true,
+    //     "es6": true,
+    //     "node": true
+    // },
+    // 解析器，用于解析代码
+    "parser": "babel-eslint",
+    // 解析器配置
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    // 规则
+    /*
+        0或off：关闭规则
+        1或warn：打开规则，并且作为一个警告（不会导致检查不通过）
+        2或error：打开规则，并且作为一个错误（退出码为1，检查不通过）
+        参数说明： 参数1：错误等级  参数2：处理方式
+    */ 
+    "rules": {
+        "camelcase": "error", // 强制驼峰命名
+        "no-tabs": "off",// 关闭tab校验
+        "no-console": "off",// 不禁用console
+        "no-alert": "warn",// 警告使用alert,confirm prompt
+        "no-const-assign": "error", // 不允许重新分配const变量
+        "no-dupe-args": "error",//函数参数不能重复
+        "no-var": "off",// 禁止使用var
+        "no-spaced-func": "error",//函数调用时 函数名与()之间不能有空格
+        "semi": ["error", "always"],// 语句强制分红结尾
+        "comma-dangle": ["error", "never"],// 对象字面量项结尾不能有逗号
+        "key-spacing": ["off", {"beforeColon": false, "afterColon": true}], // 对象字面量中冒号的前后空格
+        "quotes": ["off", "single", {"allowTemplateLiterals": true}],// 字符串单引号 允许使用反引号 ?
+        "indent": ["off", 4, {"SwitchCase": 1}],// indent: 4, switch case 特殊处理 ?
+        "jsx-quotes": ["error", "prefer-single"], // 强制在jsx属性中一致使用单引号
+
+        "no-this-before-super": "warn",
+        "no-undef": "off",
+        "no-unreachable": "warn",
+        "no-unused-vars": "off",//不允许未使用的变量
+        "constructor-super": "warn",//在构造函数中需要super()调用
+        "valid-typeof": "off",//强制将表达式类型与有效字符串进行比较
+        "no-extra-semi":"error"// 禁止不必要的分号
+    }
+}

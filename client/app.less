@@ -1,0 +1,77 @@
+@import '~antd/dist/antd.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    // line-height: 1px; // 注释先
+    // color: #fff;
+    font-size: 15px;
+    .container {
+        padding: 20px 0;
+        height: 100%;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        box-shadow: 0 0 0 50px #fff inset !important;
+    }
+
+    .ant-calendar {
+        background: #01acff;
+        border-radius: 5px;
+        .ant-calendar-input-wrap {
+            display: none;
+        }
+        .ant-calendar-date-panel {
+            .ant-calendar-header {
+                a {
+                    color: #fff;
+                    &::before {
+                        border-color: #fff;
+                    }
+                    &::after {
+                        border-color: #fff;
+                    }
+                }
+                .ant-calendar-ym-select {
+                    pointer-events: none;
+                }
+            }
+            .ant-calendar-table {
+                background: #fff;
+                .ant-calendar-today .ant-calendar-date{
+                    border: none;
+                    background: #ddd;
+                    font-weight: normal;
+                    color: rgba(0,0,0,.65)
+                }
+            }
+        }
+    }
+    
+}
+
+// 滚动条整体部分，必须要设置
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+// 滚动条的轨道
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+// 滚动条的滑块按钮
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #d4d4d4;
+}

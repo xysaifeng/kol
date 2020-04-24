@@ -1,0 +1,97 @@
+.account {
+    .home-top {
+        padding: 50px 0 28px;
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 30px;
+            .overview {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+            .ant-divider-vertical {
+                background: rgba(0, 0, 0, .5);
+            }
+            .exit {
+                color: #01acff;
+            }
+            
+        }
+        .blue-line {
+            line-height: 5px;
+        }
+    }
+    .budget {
+        .ant-table-thead > tr > th, 
+        .ant-table-tbody > tr > td {
+            
+            background: #efefef;
+            span {
+                font-size: 15px;
+            }
+        }
+        .ant-table-thead > tr > th {
+            padding: 24px 16px 10px;
+            border-bottom: none;
+        }
+        .ant-table-tbody > tr > td {
+            padding: 10px 16px 24px;
+            font-size: 15px;
+        }
+    }
+
+    .account {
+        width: 455px;
+        height: 170px;
+        background: #efefef;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 20px;
+        > div {
+            .ant-divider-vertical {
+                background: rgba(0, 0, 0, .5);
+            }
+        }
+        
+    }
+} 
+
+.modify-pwd {
+    .ant-modal-content {
+        border-radius: 0;
+        .ant-modal-body {
+            padding: 23px;
+            .ant-form {
+                .ant-row.ant-form-item {
+                    &::before {
+                        display: none;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 8px;
+                    .ant-form-item-control-wrapper {
+                        width: 174px;
+                        .ant-input {
+                            border-radius: 0;
+                        }
+                    }
+    
+                }
+            }
+            .submit-btn {
+                width: 100%;
+                border-radius: 0;
+                height: 35px;
+            }
+        }
+    }
+    
+}
